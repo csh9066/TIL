@@ -17,8 +17,7 @@
 
 ## 프리플라이트 요청(Preflighted request)
 
-- Simple Request의 요청에 부합하지 않으면 브라우저는 Preflight Request으로 요청을보냄
-- 단순 요청에 조건에 부합하지 않으면 자동으로 요청됨
+- Simple Request의 요청에 부합하지 않으면 브라우저는 자동으로 Preflight Request으로 요청을보냄
 - 먼저 `OPTIONS` 메소드를 통해 서버에서 CORS설정에 부합 되면 원래 요청을 보냄
 - 서버에서는 커스텀 헤더를 `Access-Control-Allow-Headers` 와 `Access-Control-Allow-Method` 를 설정해줘야 예비 요청(OPTION)을 통과할 수 있음
 
