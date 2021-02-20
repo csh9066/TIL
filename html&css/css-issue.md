@@ -12,7 +12,7 @@
 
 - 브라우저마다 컬러 이름에 대한 코드값이 다 다르기때문에 헥사값이나, rgba값을 지정
   - 예를 들어 `color: tomato`를 설정했으면 브라우저마다 설정값이 다르기 때문 원하는 색상이 안나올 수 있음
-- 인라인 요소는 width, height 지정 하지 못함 컨텐츠에 따라 정됨 또한 margin, hegiht도 양옆만 지정할 수 있고 위아래 지정 못함
+- 인라인 요소는 width height 지정시 무시 됨 padding border 를 사용시 다른 영역에 침범할 수 있음
   - 네비게이션 `a` 를 사용할 떄 `display:inline-block` 을 설정하고 패딩을 주면 클릭 영역을 넓힐 수 있음
 - 인라인 요소는 두개 이상 만들경우 둘 사이에 띄어쓰기 영역이 들어가있어 브라우저마다 여백이 다를 수 있음
 - 대체 텍스트를 이용할때 css 속성 `text-indent: -9999px` 를 사용하면 됨
@@ -21,3 +21,10 @@
   - 부모요소에 가상 요소 설정 `.clearfix::after { content: ""; display: block; clear: both}`
 - `line-height` 블록 요소에서 텍스트 줄 사이의 거리(행간)을 설정함
   - `line-height: 1.5` 속성 값에 숫자를 지정하면 폰트 기준 으로 높이를 측정함 요소의 `font-size: 16px` 이면 텍스트당 행간(높이)는 `24px` 임
+- html 태그 내에서 `&nbsp;`는 **Non-breaking space**의 약자로 자동으로 줄바꿈 되는걸 방지 할 수 있다
+- `box-sizing` 의 값
+  - `content-box` 로 설정 되었을 때 `width` 와 `height` 은 오직 컨텐츠 영역에만 할당 됨
+    - width나 height을 100%로 설정하고 패딩이나 보더를 줬을 때 컨테이닝 블록에서 넘칠 수 있음
+  - `border-box` 로 설정 되었을 떄는 `width` 와 `height` 은 `padding` 와 `border` 의 값들과 합친 값임
+- `margin` `padding` 의 값에 %값은 컨테이닝 블록의 컨텐츠 영역의 **너비(width)**에 %임
+  - **컨테이닝 블록**은 `postion` 에 영향을 받음!
