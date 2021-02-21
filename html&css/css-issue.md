@@ -28,3 +28,8 @@
   - `border-box` 로 설정 되었을 떄는 `width` 와 `height` 은 `padding` 와 `border` 의 값들과 합친 값임
 - `margin` `padding` 의 값에 %값은 컨테이닝 블록의 컨텐츠 영역의 **너비(width)**에 %임
   - **컨테이닝 블록**은 `postion` 에 영향을 받음!
+- `overflow`
+  - `visible` - 기본 값임 컨텐츠가 넘칠경우 박스 바깥영역으로 침범함
+  - `hidden` - 넘칠경우 나머지 컨텐츠가 보이지 않음
+  - `scroll` - 넘치지 않아도 박스에 scroll이 생김 x축 y축 설정 가능
+  - `auto` - 넘칠경우에만 자동적으로 scroll이 생김
