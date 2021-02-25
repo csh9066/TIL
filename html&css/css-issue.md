@@ -33,3 +33,6 @@
   - `hidden` - 넘칠경우 나머지 컨텐츠가 보이지 않음
   - `scroll` - 넘치지 않아도 박스에 scroll이 생김 x축 y축 설정 가능
   - `auto` - 넘칠경우에만 자동적으로 scroll이 생김
+- **flex-basis와 width**
+    - `flex-basis` 는 초기 `width`를 결정 짓는 속성이 아니라 초기 크기를 결정하는 속성이다. `flex-diection` 의 속성에 따라 크기를 결정 짓는방법이 달라진다 `column` 으로 설정시 `height` 가 설정 된다
+    - `flex-basis` 와 `width` 의 우선순위는 `flex-basis: auto` (기본값)으로 설정되어있지 않으면 `flex-basis` 가 우선순위에 있다 (height도 마찬가지)
